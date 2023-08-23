@@ -1,0 +1,31 @@
+Task 1
+
+1 Smooth the image using a Gaussian filter to reduce noise.
+2 Convolve the image with a kernel that is designed to detect edges.
+3 Threshold the output of the convolution to identify the edges in the image.
+
+The kernel used to detect edges is typically a small array of numbers that is designed to respond to changes in the intensity of the image. For example, the Sobel filter is a popular edge detection kernel that is used to detect edges in both 1D and 2D images.
+
+The threshold used to identify edges is a value that determines which pixels are considered to be edges. Any pixels with a dot product that is greater than the threshold are considered to be edges
+
+
+Task 3
+
+
+1 Why does the validation error increase when the number of epochs is increased?
+
+The validation error increases because the model is likely overfitting to the training data, meaning it's learning to perform well on the training data but not on unseen data.
+
+2 How can you modify the training process to prevent the validation error from increasing?
+
+You can prevent increasing validation error by:
+Using more data if possible.
+Reducing model complexity (fewer layers or units).
+Applying regularization techniques (dropout, L1/L2 regularization).
+Implementing early stopping.
+Experimenting with hyperparameters.
+Using data augmentation.
+
+3 Explain how the mini batch SGD (Stochastic Gradient Descent) algorithm can converge faster than the batch Gradient Descent algorithm.
+
+Mini-batch Stochastic Gradient Descent (SGD) can converge faster than batch Gradient Descent because it updates the model's parameters more frequently based on smaller subsets of the data, which helps it adjust faster, escape local minima, and benefit from parallelization and adaptive learning rates.
